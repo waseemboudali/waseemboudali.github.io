@@ -1,3 +1,44 @@
 body{
-    text-align: center;	
+    text-align: center;
+    background-image: url("visuals/back.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-style: normal;
+    font-family: 'Slabo', sans-serif;
+    font-size: 60px;
+    margin: 0px;
+    text-align: center;
 }
+
+#pagetop{
+    position: fixed;
+    top: 0px;
+    width:100%;
+    height: 175px;
+    background: #06C;
+    color: #FFF;
+    font-size: 60px;
+    padding-top: 50px;
+    transition: height 0.3s linear 0s, padding 0.3s linear 0s;
+    overflow:hidden;
+    vertical-align: top;
+}
+#pagetop > #menu{
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    background: #004A95;
+    height: 50px;
+    font-size: 30px;
+    transition: height 0.3s linear 0s;
+}
+#pagetop > #welcome{
+    font-size: 20px;
+}
+#pagetop > #identity{
+    font-size: 60px;
+}
+#wrapper{ margin-top: 230px; }

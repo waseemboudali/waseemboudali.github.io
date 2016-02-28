@@ -7,7 +7,11 @@
         <style>
             body{ 
                 margin: 0px; text-align: center; 
-                background-image: url("visuals/back.jpg");
+                background: transparent url("visuals/back.jpg") no-repeat left top;
+                background-size: cover;
+                font-size: 14px;
+                font-family: 'Playfair Display', serif;
+                color: white;
             }
             #pagetop{
                 position: fixed;
@@ -27,7 +31,9 @@
                 bottom: 0px;
                 width:100%;
                 background: #555555;
-                height: 50px;
+                height: 30px;
+                font-family: 'Playfair Display', serif;
+                font-size: 20px;
                 transition: height 0.3s linear 0s;
             }
             #pagetop > #welcome{
@@ -39,6 +45,9 @@
                 font-family: 'Playfair Display', serif;
             }
             #wrapper{ margin-top: 230px; }
+            p {
+                margin-bottom: 30em;
+            }
         </style>
         <script>
             var pagetop, menu, yPos;
@@ -55,7 +64,7 @@
                 } else {
                     pagetop.style.height = "170px";
                     pagetop.style.paddingTop = "50px";
-                    menu.style.height = "50px";
+                    menu.style.height = "30px";
                     welcome.style.display = "inline";
                 }
             }
@@ -70,13 +79,25 @@
             <div id="identity">
                 Waseem Boudali
             </div>
-            <div id="menu">menu system
+            <div id="menu">
+                 | <a href="#Intro">Introduction</a> | <a href="#About">About Waseem</a> | <a href="#Connect">Connect With Waseem</a> | 
             </div>
         </div>
         <div id="wrapper">
-        <script> 
-            for(var i = 0; i < 35; i++){ document.write("<h2>"+(i+1)+". Dummy page content ... </h2>"); }
-        </script>
         </div>
+
     </body>
+    <a name="Intro"><h4>Introduction</h4></a>
+    <p>Waseem Boudali is currently a student in his fourth year of high school at Vincent Massey Secondary School in Windsor, Ontario. He is 18 years of age and has a deep love for his school, which he expresses by involving himself in various school activities.</p>
+
+    <a name="About"><h4>About Waseem</h4></a>
+    <p>Waseem Boudali was born in Windsor, Ontario, Canada on Friday, February the 13th, 1998. He has resided in his place of birth all his life, and as such, a large love for his city has grown within him. Despite this, Waseem plans to leave his city for the nation's capital to pursue his post-secondary studies, pending his secondary school graduation. Waseem shares a passion for politics and sports, as well as literature and language.</p>
+
+
+
+    <a name="Connect"><h4>Connect With Waseem</h4></a>
+    <footer class="footer">
+        <p>Photo credit to <a href="https://www.facebook.com/VisileKPhotography">VisileK Photography</a> <a href="https://www.twitter.com/waseemboudali">Waseem's Twitter page</p>
+    </footer>
+
 </html>
